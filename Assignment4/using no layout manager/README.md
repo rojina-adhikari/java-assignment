@@ -1,0 +1,6 @@
+##using no layout manager/Absolute layout
+
+Although it's possible to do without a layout manager, you should use a layout manager if at all possible. A layout manager makes it easier to adjust to look-and-feel-dependent component appearances, to different font sizes, to a container's changing size, and to different locales. Layout managers also can be reused easily by other containers as well as other programs.
+If a container holds components whose size isn't affected by the container's size or by font and look-and-feel and language changes, then absolute positioning might make sense. Desktop panes, which contain internal frames (in the Creating a GUI with JFC/Swing trail), are in this category. The size and position of internal frames doesn't depend directly on the desktop pane's size. The programmer determines the initial size and placement of internal frames within the desktop pane, and then the user can move or resize the frames. A layout manager is unnecessary in this situation.
+
+Another situation in which absolute positioning might make sense is that of a custom container that performs size and position calculations that are particular to the container, and perhaps require knowledge of the container's specialized state. 
