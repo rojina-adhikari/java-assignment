@@ -1,3 +1,7 @@
+
+import java.awt.*;  
+import javax.swing.*;  
+
 public class GroupExample {  
     public static void main(String[] args) {  
         JFrame frame = new JFrame("GroupLayoutExample");  
